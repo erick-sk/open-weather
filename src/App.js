@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import Header from './components/Header';
 
 function App() {
-  return <h1>Open Weather</h1>;
+  return (
+    <Fragment>
+      <Header title='Open Weather' />
+    </Fragment>
+  );
 }
 
 export default App;
