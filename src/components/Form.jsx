@@ -1,12 +1,6 @@
 import React, { useState } from 'react';
 
-const Form = () => {
-  // state form
-  const [search, saveSearch] = useState({
-    city: '',
-    country: '',
-  });
-
+const Form = ({ search, saveSearch, saveConsult }) => {
   const [error, saveError] = useState(false);
 
   // extracting city and country
@@ -34,6 +28,7 @@ const Form = () => {
     saveError(false);
 
     // to pass app.js
+    saveConsult(true);
   };
 
   return (
