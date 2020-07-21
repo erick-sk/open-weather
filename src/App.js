@@ -38,6 +38,7 @@ function App() {
       }
     };
     consultAPI();
+    // eslint-disable-next-line
   }, [consult]);
 
   let component;
